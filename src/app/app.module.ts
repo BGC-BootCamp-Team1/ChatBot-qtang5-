@@ -7,6 +7,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { InputComponent } from './input/input.component';
 import { IconComponent } from './icon/icon.component';
 import { CardComponent } from './card/card.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,9 @@ import { CardComponent } from './card/card.component';
     AppRoutingModule,
     InputComponent,
     IconComponent,
-    CardComponent
+    CardComponent,
+    HttpClientModule
+    
   ],
   providers: [
     provideAnimationsAsync()
