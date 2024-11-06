@@ -1,3 +1,4 @@
-<input-component></input-component>
-<icon-svg></icon-svg>
-<app-card></app-card>
+<div class="app-container">
+    <input-component (historyUpdated)="onResponseUpdated($event)"></input-component>
+    <app-card [responseDisplay]="this.response"></app-card>
+</div>

@@ -1,10 +1,20 @@
+
 .example-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-  }
-  
-  .example-full-width {
-    width: 100%;
-  }
-  
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 5px; 
+  height: 5px; 
+}

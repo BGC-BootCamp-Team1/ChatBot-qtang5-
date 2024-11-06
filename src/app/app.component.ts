@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AIGenerationService } from './service/aigeneration.service';
 
 
 @Component({
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'ChatBot';
+  public response: string = '';
+
+  onResponseUpdated(newResponse: string) {
+    this.response = newResponse;
+  }
+  constructor(public aiGenerationService: AIGenerationService) {}
 }
