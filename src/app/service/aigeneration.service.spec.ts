@@ -51,7 +51,7 @@ describe('AIGenerationService', () => {
 
 
 service.generateContent('推荐美食').subscribe(response => {
-  expect(response).toBe('推荐的美食是寿司。');
+  expect(response).tobe('推荐的美食是寿司。');
 });
 
 const req = httpMock.expectOne(environment.apiUrl);
